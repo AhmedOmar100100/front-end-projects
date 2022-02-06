@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+
+}
+
+#deleteAllBtn {
+    margin: 20px 0px;
+}
+
+body {
+    /* 
+    some colors
+    1- #DDDDDD
+    2- #222831
+    3- #30475E
+    4- #F05454
+    */
+    background-color: #30475E;
+    color: #fff;
+    font-family: 'Handlee', cursive;
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+.crud {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* start head */
+.head {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+/* end head */
+/* inputs */
+input {
+    width: 100%;
+    height: 33px;
+    border: none;
+    outline: none;
+    background-color: #222831;
+    margin: 6px 0px;
+    border-radius: 4px;
+    padding: 7px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    font-size: 17px;
+}
+
+input:focus {
+    background-color: #14181d;
+    transform: scale(1.019);
+}
+
+
+.price input {
+    width: 20%;
+}
+
+.price #total {
+    background-color: #F05454;
+    color: #fff;
+    padding: 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.price #total::before {
+    content: "Total: ";
+}
+
+button {
+    width: 100%;
+    height: 36px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #F05454;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+#submit {
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #e43a3a;
+    font-size: 19px;
+}
+
+.outputs #search {
+    padding-right: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonContainer button {
+    width: 48%;
+    margin-top: 6px;
+}
+
+/* inputs */
+/* outputs */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px;
+}
+
+/* outputs */
+.fa-edit, .fa-trash-alt {
+    cursor: pointer;
+}
