@@ -34,13 +34,14 @@
         </div>
         <div class="outputs">
             <div class="searchContainer">
-                <input type="text" id="search" placeholder="بحث">
+                <input type="text" id="search" placeholder="بحث" onkeyup="searchData(this.value)">
                 <div class="buttonContainer">
-                    <button id="searchByName">بحث بالاسم</button>
-                    <button id="searchByCategory">بحث بالتصنيف</button>
+                    <button id="searchByName" onclick="getSearchMode(this.id)">بحث بالاسم</button>
+                    <button id="searchByCategory" onclick="getSearchMode(this.id)">بحث بالتصنيف</button>
                 </div>
             </div>
             <div id="deleteAllSpace"></div>
+            <div id="searchNotFound">نتيجة بحث غير موجودة</div>
             <table>
                 <thead id="thead">
                     <tr>
