@@ -55,7 +55,7 @@ submit.onclick = function () {
         count: count.value,
         category: category.value.toLowerCase()
     }
-    if (title.value != "" && category.value != "" && price.value != "" && count <= 100) {
+    if (title.value != "" && category.value != "" && price.value != "") {
         if (mode == "create") {
             if (product.count > 1) {
                 for (let i = 0; i < product.count; i++) {
@@ -78,9 +78,10 @@ submit.onclick = function () {
 
 
 
+
+        readData();
     }
 
-    readData();
 
 
 
