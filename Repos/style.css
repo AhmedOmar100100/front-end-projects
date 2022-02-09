@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2C394B;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container .logo {
+    text-align: center;
+}
+
+.container .logo img {
+    height: 280px;
+}
+
+.container .search-container {
+    text-align: center;
+}
+
+.container .search {
+    width: 55%;
+    background-color: #082032;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+
+
+}
+
+button {
+    background-color: #082032;
+    border: 0;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 16px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.repo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+button:focus, input:focus {
+    outline: 2px solid #334756;
+
+}
+
+.results {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* .results .repo {
+    background-color: #1c1c1d;
+    margin-top: 20px;
+    padding: 10px;
+} */
+
+.results .repo-div {
+    padding: 15px;
+    background-color: #303134;
+    /* font-size: 13px; */
+
+}
+
+.results .repo-div:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.results .repo-div a, .results .repo-div span {
+    float: right;
+    margin-left: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    width: 70px;
+    text-align: center;
+    padding: 5px;
+}
+
+.results .repo-div:not(:nth-child(2)), .results .repo-div:not(:nth-child(3)) {
+    font-size: 14px;
+}
+
+
+.results .repo-div a {
+    background-color: #FF4C29;
+    text-decoration: none;
+    width: 60px;
+
+}
+
+.results .repo-div span {
+    background-color: #E94560;
+}
+
+.results .repo-div:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 98%;
+    }
+
+    .container .logo {
+        margin-top: 70px;
+    }
+
+    .container .logo img {
+        height: 240px;
+    }
+
+    .container .search {
+        width: 95%;
+        height: 48px;
+        line-height: 48px;
+        margin-bottom: 20px;
+        padding-left: 8px;
+        border-radius: 6px;
+        font-size: 17px;
+
+
+    }
+
+    button {
+
+        border-radius: 6px;
+        font-size: 15px;
+        padding: 0px 18px;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+}
